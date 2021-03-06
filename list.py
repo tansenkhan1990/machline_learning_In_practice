@@ -1,6 +1,6 @@
 thislist = ["apple", "banana", "cherry"]
-tropical = ["mango", "pineapple", "papaya"]
+thistuple = ("kiwi", "orange")
 
-thislist.extend(tropical)
+thislist.extend(thistuple)
 
-print(thislist)
+print(thislist) 
