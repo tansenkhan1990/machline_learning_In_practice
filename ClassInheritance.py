@@ -4,6 +4,7 @@ class Person:
     self.lastname = lname
 
   def printname(self):
+    print('this is form Parents property')
     print(self.firstname, self.lastname)
 
 class Student(Person):
@@ -19,6 +20,5 @@ class Student(Person):
 
 objectChild = Student("Mike", "Olsen", 2019)
 print(objectChild.asd())
-# objectPerson = Person('Tansen',"Bondhon")
-# objectChild.GetPersonProperties()
+objectChild.GetPersonProperties()
 
