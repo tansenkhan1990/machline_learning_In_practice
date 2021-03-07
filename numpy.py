@@ -1,17 +1,16 @@
 import numpy as np
 
-a = np.array(42)
-b = np.array([1, 2, 3, 4, 5])
-c = np.array([[1, 2, 3], [4, 5, 6]])
-d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+arr = np.array([1, 2, 3, 4, 5])
+x = arr.view()
+arr[0] = 42
 
-print(a.ndim)
-print(b.ndim)
-print(c.ndim)
-print(d.ndim)
+print(arr)
+print(x)
 
 
+arr = np.array([1, 2, 3, 4, 5])
+x = arr.copy()
+arr[0] = 42
 
-arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
-
-print('Last element from 2nd dim: ', arr[1, -1])
+print(arr)
+print(x)
