@@ -3,5 +3,11 @@ thisdict = {
   "model": "Mustang",
   "year": 1964
 }
-del thisdict["model"]
-print(thisdict)
+for x in thisdict:
+  print(thisdict[x])
+
+for x in thisdict.values():
+  print(x)
+
+for x in thisdict.keys():
+  print(x)
