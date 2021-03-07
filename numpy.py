@@ -1,16 +1,7 @@
 import numpy as np
 
-arr = np.array([1, 2, 3, 4, 5])
-x = arr.view()
-arr[0] = 42
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 
-print(arr)
-print(x)
+newarr = arr.reshape(4, 3)
 
-
-arr = np.array([1, 2, 3, 4, 5])
-x = arr.copy()
-arr[0] = 42
-
-print(arr)
-print(x)
+print(newarr)
