@@ -3,5 +3,5 @@ thisdict = {
   "model": "Mustang",
   "year": 1964
 }
-thisdict.pop("model")
+del thisdict["model"]
 print(thisdict)
