@@ -1,8 +1,4 @@
 import pandas as pd
-data = [1,2,3,4,5]
-df = pd.DataFrame(data)
+data = [['Alex',10],['Bob',12],['Clarke',13]]
+df = pd.DataFrame(data,columns=['name','age'])
 print(df)
-print('this is columns')
-print(df.columns)
-print('this is values')
-print(df.values)
