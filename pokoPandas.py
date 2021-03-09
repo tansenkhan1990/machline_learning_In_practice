@@ -1,18 +1,16 @@
+import pandas as pd
+import numpy as np
 
 import pandas as pd
-df = pd.DataFrame([[1, 2], [3, 4]], columns = ['a','b'])
-df2 = pd.DataFrame([[5, 6], [7, 8]], columns = ['a','b'])
+import numpy as np
 
-df = df.append(df2)
-
-# Drop rows with label 0
-print('this is the dataFrame')
+df = pd.DataFrame(np.random.randn(4,3),columns = ['col1','col2','col3'])
+print('this is dataFrame')
 print(df)
-print('this is drop columns')
-x,y = df
-print(x)
-print(y)
-
-df = df.drop(0)
-print('this is the DataFrame after the drop')
-print(df)
+for row_index,row in df.iterrows():
+   print('this is row index')
+   print(row_index)
+   print('row')
+   print(row)
+   print('last item')
+   print(row_index,row)
