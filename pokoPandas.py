@@ -6,4 +6,4 @@ index = ['a','b','c','d','e','f','g','h'], columns = ['A', 'B', 'C', 'D'])
 # print(df)
 #select all rows for a specific column
 
-print(df.loc[['a','b','f','h'],['A','C']])
+print(df.loc[['a'],['A']])
