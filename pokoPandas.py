@@ -1,9 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.DataFrame(np.random.randn(8, 4),
-index = ['a','b','c','d','e','f','g','h'], columns = ['A', 'B', 'C', 'D'])
-# print(df)
-#select all rows for a specific column
+df = pd.DataFrame(np.random.randn(8, 4), columns = ['A', 'B', 'C', 'D'])
 
-print(df.loc[['a'],['A']])
+# select all rows for a specific column
+print( df.iloc[:4])
